@@ -1,0 +1,33 @@
+{
+  "name": "sourcemap-viewer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "8.x"
+  },
+  "bin": {
+    "sourcemap-viewer": "bin/sourcemap-viewer.js"
+  },
+  "scripts": {
+    "lint": "eslint bin"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^1.7.3",
+    "source-map": "^0.5.7",
+    "yargs": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.7.2",
+    "prettier": "^1.7.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "extends": "eslint:recommended",
+    "env": {
+      "node": true
+    }
+  }
+}
